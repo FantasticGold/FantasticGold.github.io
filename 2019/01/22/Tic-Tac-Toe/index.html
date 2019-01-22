@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>Tic Tac Toe | 幻想之源 | Golden Space</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#268785">
+    
+    
+    <meta name="keywords" content="游戏,unity3d">
+    <meta name="description" content="Github地址：https://github.com/FantasticGold/Unity3D-Study">
+<meta name="keywords" content="游戏,unity3d">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Tic Tac Toe">
+<meta property="og:url" content="http://fantasticgold.github.io/2019/01/22/Tic-Tac-Toe/index.html">
+<meta property="og:site_name" content="幻想之源">
+<meta property="og:description" content="Github地址：https://github.com/FantasticGold/Unity3D-Study">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://fantasticgold.github.io/2019/01/22/Tic-Tac-Toe/welcome.png">
+<meta property="og:image" content="http://fantasticgold.github.io/2019/01/22/Tic-Tac-Toe/win.png">
+<meta property="og:image" content="http://fantasticgold.github.io/2019/01/22/Tic-Tac-Toe/draw.png">
+<meta property="og:image" content="http://fantasticgold.github.io/2019/01/22/Tic-Tac-Toe/declare.png">
+<meta property="og:image" content="http://fantasticgold.github.io/2019/01/22/Tic-Tac-Toe/reset.png">
+<meta property="og:image" content="http://fantasticgold.github.io/2019/01/22/Tic-Tac-Toe/button.png">
+<meta property="og:image" content="http://fantasticgold.github.io/2019/01/22/Tic-Tac-Toe/result.png">
+<meta property="og:updated_time" content="2019-01-22T05:47:09.659Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Tic Tac Toe">
+<meta name="twitter:description" content="Github地址：https://github.com/FantasticGold/Unity3D-Study">
+<meta name="twitter:image" content="http://fantasticgold.github.io/2019/01/22/Tic-Tac-Toe/welcome.png">
+    
+        <link rel="alternate" type="application/atom+xml" title="幻想之源" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.7.2">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide">
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">Gold</h5>
+          <a href="mailto:fantasticgold@foxmail.com" title="fantasticgold@foxmail.com" class="mail">fantasticgold@foxmail.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/">
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories">
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags">
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives">
+                <i class="icon icon-lg icon-archives"></i>
+                归档
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/FantasticGold" target="_blank">
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://blog.csdn.net/Fast_G" target="_blank">
+                <i class="icon icon-lg icon-book"></i>
+                CSDN
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Tic Tac Toe</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="搜索">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">Tic Tac Toe</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2019-01-21T17:19:12.000Z" itemprop="datePublished" class="page-time">
+  2019-01-22
+</time>
+
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>目录</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#游戏玩法"><span class="post-toc-number">1.</span> <span class="post-toc-text">游戏玩法</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#游戏截图"><span class="post-toc-number">2.</span> <span class="post-toc-text">游戏截图</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#实现步骤"><span class="post-toc-number">3.</span> <span class="post-toc-text">实现步骤</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#运行脚本"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">运行脚本</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#游戏逻辑"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">游戏逻辑</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#生成应用"><span class="post-toc-number">3.3.</span> <span class="post-toc-text">生成应用</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#参考链接"><span class="post-toc-number">4.</span> <span class="post-toc-text">参考链接</span></a></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-Tic-Tac-Toe" class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">Tic Tac Toe</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2019-01-22 01:19:12" datetime="2019-01-21T17:19:12.000Z" itemprop="datePublished">2019-01-22</time>
+
+            
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style="display:none">
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <p>Github地址：<a href="https://github.com/FantasticGold/Unity3D-Study" target="_blank" rel="noopener">https://github.com/FantasticGold/Unity3D-Study</a></p>
+<a id="more"></a>
+<h1 id="游戏玩法"><a href="#游戏玩法" class="headerlink" title="游戏玩法"></a>游戏玩法</h1><p>Tic Tac Toe即井字棋，两位玩家轮流行动，分别在空的格子中放入<code>X</code>和<code>O</code>，当九宫格中任意一行、一列或对角线上三个格子放入的符号都相同时，该玩家获胜。</p>
+<h1 id="游戏截图"><a href="#游戏截图" class="headerlink" title="游戏截图"></a>游戏截图</h1><p><img src="/2019/01/22/Tic-Tac-Toe/welcome.png" style="zoom:50"></p>
+<p><img src="/2019/01/22/Tic-Tac-Toe/win.png" style="zoom:50"></p>
+<p><img src="/2019/01/22/Tic-Tac-Toe/draw.png" style="zoom:50"></p>
+<h1 id="实现步骤"><a href="#实现步骤" class="headerlink" title="实现步骤"></a>实现步骤</h1><h2 id="运行脚本"><a href="#运行脚本" class="headerlink" title="运行脚本"></a>运行脚本</h2><p>新建main.cs脚本，添加到Camera上，当游戏运行时，就会运行main.cs脚本。</p>
+<h2 id="游戏逻辑"><a href="#游戏逻辑" class="headerlink" title="游戏逻辑"></a>游戏逻辑</h2><p>在main.cs脚本中实现游戏逻辑。这里用到MonoBehaviour类的自带函数<code>Start</code>、<code>OnGUI</code>和<code>Reset</code>，其中<code>Start</code>只在脚本实例被启用时调用一次，<code>OnGUI</code>在渲染和处理GUI事件时调用，每帧执行一次，<code>Reset</code>只在编辑模式下被调用。</p>
+<p>首先声明GUI组件的大小、位置等参数，声明符号计数变量以判断胜负，声明当前回合玩家以及获胜者。</p>
+<p><img src="/2019/01/22/Tic-Tac-Toe/declare.png" style="zoom:50"></p>
+<p>然后在<code>Start</code>中初始化GUI组件的参数，调用<code>Reset</code>重置九宫格中的符号、符号计数变量、当前回合玩家以及获胜者。</p>
+<p><img src="/2019/01/22/Tic-Tac-Toe/reset.png" style="zoom:50"></p>
+<p>在<code>OnGUI</code>中渲染GUI组件并处理按钮点击事件。当Reset按钮被点击时，重新开局；当空的格子被点击时，放入当前回合玩家的符号，更新符号计数变量并判断胜负，更新当前回合玩家。</p>
+<p><img src="/2019/01/22/Tic-Tac-Toe/button.png" style="zoom:50"></p>
+<p>最后，当游戏结束时，显示游戏结果。</p>
+<p><img src="/2019/01/22/Tic-Tac-Toe/result.png" style="zoom:50"></p>
+<h2 id="生成应用"><a href="#生成应用" class="headerlink" title="生成应用"></a>生成应用</h2><p>File =&gt; Build Settings…</p>
+<p>选择游戏发布平台以及存放路径，点击Build按钮生成可执行程序。</p>
+<h1 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h1><p>Unity-井字棋：<a href="https://xwy27.github.io/Unity-3d/%E4%BA%95%E5%AD%97%E6%A3%8B/index.html" target="_blank" rel="noopener">https://xwy27.github.io/Unity-3d/%E4%BA%95%E5%AD%97%E6%A3%8B/index.html</a></p>
+<p>Unity脚本手册：<a href="http://docs.manew.com/Script/index.htm" target="_blank" rel="noopener">http://docs.manew.com/Script/index.htm</a></p>
+<p>unity脚本执行顺序详解：<a href="https://blog.csdn.net/woailvmengmeng/article/details/28423039" target="_blank" rel="noopener">https://blog.csdn.net/woailvmengmeng/article/details/28423039</a></p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2019-01-22T05:47:09.659Z" itemprop="dateUpdated">2019-01-22 13:47:09</time>
+</span><br>
+
+
+        
+        源地址：<a href="/2019/01/22/Tic-Tac-Toe/" target="_blank" rel="external">http://fantasticgold.github.io/2019/01/22/Tic-Tac-Toe/</a>
+        
+    </div>
+    
+    <footer>
+        <a href="http://fantasticgold.github.io">
+            <img src="/img/avatar.jpg" alt="Gold">
+            Gold
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unity3d/">unity3d</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/游戏/">游戏</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://fantasticgold.github.io/2019/01/22/Tic-Tac-Toe/&title=《Tic Tac Toe》 — 幻想之源&pic=http://fantasticgold.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://fantasticgold.github.io/2019/01/22/Tic-Tac-Toe/&title=《Tic Tac Toe》 — 幻想之源&source=Github地址：https://github.com/FantasticGold/Unity3D-Study" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://fantasticgold.github.io/2019/01/22/Tic-Tac-Toe/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Tic Tac Toe》 — 幻想之源&url=http://fantasticgold.github.io/2019/01/22/Tic-Tac-Toe/&via=http://fantasticgold.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://fantasticgold.github.io/2019/01/22/Tic-Tac-Toe/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2019/01/21/幻想之源/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">幻想之源</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Valine Comments -->
+    <div class="comments vcomment" id="comments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+    <!-- Valine Comments script -->
+    <script>
+        var GUEST_INFO = ['nick','mail','link'];
+        var guest_info = 'nick,mail'.split(',').filter(function(item){
+          return GUEST_INFO.indexOf(item) > -1
+        });
+        new Valine({
+            el: '#comments',
+            notify: 'false' == 'true',
+            verify: 'false' == 'true',
+            appId: "rKqXGoa078vN1On1vdFpXTYQ-gzGzoHsz",
+            appKey: "r4rsrIvYXrIfBruDEDKC4Ov3",
+            avatar: "mm",
+            placeholder: "欢迎留言~",
+            guest_info: guest_info.length == 0 ? GUEST_INFO : guest_info,
+            pageSize: "10"
+        })
+    </script>
+    <!-- Valine Comments end -->
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢老板~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check" data-wechat="/img/wechat.jpg" data-alipay="/img/alipay.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style="display:none">
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style="display:none">
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>Gold &copy; 2015 - 2019</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://fantasticgold.github.io/2019/01/22/Tic-Tac-Toe/&title=《Tic Tac Toe》 — 幻想之源&pic=http://fantasticgold.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://fantasticgold.github.io/2019/01/22/Tic-Tac-Toe/&title=《Tic Tac Toe》 — 幻想之源&source=Github地址：https://github.com/FantasticGold/Unity3D-Study" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://fantasticgold.github.io/2019/01/22/Tic-Tac-Toe/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Tic Tac Toe》 — 幻想之源&url=http://fantasticgold.github.io/2019/01/22/Tic-Tac-Toe/&via=http://fantasticgold.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://fantasticgold.github.io/2019/01/22/Tic-Tac-Toe/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACHElEQVR42u3aO3ICQQwFQO5/aZwSGPwkLa5aTU9EGfbTDl5Jo3k84vV8Wa9/mfwyufbihYGBcVvG8+P6/Jv5/XvP/eXpGBgYBzDePT7//O7bHjt/NwwMDIykvKuWg0nIYmBgYMwDN78qIfVaZQwMjNMY1RCsln0J/p96cQwMjBsyJo3ltz9/Zb6BgYFxK0Zvsz4Jyny7rRqyv9wTAwNjNSMPuF57WW2DR4UmBgbGakbepuaxWx0MJOHbrGExMDAWMSYjyeSqvIicDycwMDA2MZK2s1quVQHlUSUGBgZGEHzVUjJvX5vDTgwMjNWM3gtddQAi+WeV61kMDIyljKua2GTrrRrBvYISAwNjK6NXFPYKx8mhjWiEiYGBsZRR3fZKIjUpOr9e7WJgYCxi5JtlE17eQhcqWQwMjAMY8+Nc80FmHtlvwRgYGKsZvYvzgxrVgK7GNAYGxm5GtXW8dgCZj06bZ0YwMDBWMJIWsXq7ZGDZKzf/+CUGBsYBjCQQ82a1N0K4oEDEwMBYzZgPCebHyybBjYGBcTLjEa+kTPze/TEwMLYynsVV3SyrhmzvuAYGBsZuRi/s8sMW1WY4b497kY2BgXFfxmUbXhcVms3AxcDAOIDR2/zKR4+Tbbho4IqBgYHxkXHVpn8v4jEwMDDyPrj6cnkRmdwZAwPjBEbSxOYlYG+LrTeKwMDAOIFRbR0n44FeEOdjBgwMjHWMH6GKS6nkfFGjAAAAAElFTkSuQmCC" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="/js/main.min.js?v=1.7.2"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.7.2" async></script>
+
+
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '幻想之源';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '欢迎回来';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
