@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://fantasticgold.github.io/"/>
-  <updated>2019-01-22T05:47:09.659Z</updated>
+  <updated>2019-01-22T06:05:44.221Z</updated>
   <id>http://fantasticgold.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://fantasticgold.github.io/2019/01/22/Tic-Tac-Toe/"/>
     <id>http://fantasticgold.github.io/2019/01/22/Tic-Tac-Toe/</id>
     <published>2019-01-21T17:19:12.000Z</published>
-    <updated>2019-01-22T05:47:09.659Z</updated>
+    <updated>2019-01-22T06:05:44.221Z</updated>
     
     <content type="html"><![CDATA[<p>Github地址：<a href="https://github.com/FantasticGold/Unity3D-Study" target="_blank" rel="noopener">https://github.com/FantasticGold/Unity3D-Study</a></p><a id="more"></a><h1 id="游戏玩法"><a href="#游戏玩法" class="headerlink" title="游戏玩法"></a>游戏玩法</h1><p>Tic Tac Toe即井字棋，两位玩家轮流行动，分别在空的格子中放入<code>X</code>和<code>O</code>，当九宫格中任意一行、一列或对角线上三个格子放入的符号都相同时，该玩家获胜。</p><h1 id="游戏截图"><a href="#游戏截图" class="headerlink" title="游戏截图"></a>游戏截图</h1><p><img src="/2019/01/22/Tic-Tac-Toe/welcome.png" style="zoom:50"></p><p><img src="/2019/01/22/Tic-Tac-Toe/win.png" style="zoom:50"></p><p><img src="/2019/01/22/Tic-Tac-Toe/draw.png" style="zoom:50"></p><h1 id="实现步骤"><a href="#实现步骤" class="headerlink" title="实现步骤"></a>实现步骤</h1><h2 id="运行脚本"><a href="#运行脚本" class="headerlink" title="运行脚本"></a>运行脚本</h2><p>新建main.cs脚本，添加到Camera上，当游戏运行时，就会运行main.cs脚本。</p><h2 id="游戏逻辑"><a href="#游戏逻辑" class="headerlink" title="游戏逻辑"></a>游戏逻辑</h2><p>在main.cs脚本中实现游戏逻辑。这里用到MonoBehaviour类的自带函数<code>Start</code>、<code>OnGUI</code>和<code>Reset</code>，其中<code>Start</code>只在脚本实例被启用时调用一次，<code>OnGUI</code>在渲染和处理GUI事件时调用，每帧执行一次，<code>Reset</code>只在编辑模式下被调用。</p><p>首先声明GUI组件的大小、位置等参数，声明符号计数变量以判断胜负，声明当前回合玩家以及获胜者。</p><p><img src="/2019/01/22/Tic-Tac-Toe/declare.png" style="zoom:50"></p><p>然后在<code>Start</code>中初始化GUI组件的参数，调用<code>Reset</code>重置九宫格中的符号、符号计数变量、当前回合玩家以及获胜者。</p><p><img src="/2019/01/22/Tic-Tac-Toe/reset.png" style="zoom:50"></p><p>在<code>OnGUI</code>中渲染GUI组件并处理按钮点击事件。当Reset按钮被点击时，重新开局；当空的格子被点击时，放入当前回合玩家的符号，更新符号计数变量并判断胜负，更新当前回合玩家。</p><p><img src="/2019/01/22/Tic-Tac-Toe/button.png" style="zoom:50"></p><p>最后，当游戏结束时，显示游戏结果。</p><p><img src="/2019/01/22/Tic-Tac-Toe/result.png" style="zoom:50"></p><h2 id="生成应用"><a href="#生成应用" class="headerlink" title="生成应用"></a>生成应用</h2><p>File =&gt; Build Settings…</p><p>选择游戏发布平台以及存放路径，点击Build按钮生成可执行程序。</p><h1 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h1><p>Unity-井字棋：<a href="https://xwy27.github.io/Unity-3d/%E4%BA%95%E5%AD%97%E6%A3%8B/index.html" target="_blank" rel="noopener">https://xwy27.github.io/Unity-3d/%E4%BA%95%E5%AD%97%E6%A3%8B/index.html</a></p><p>Unity脚本手册：<a href="http://docs.manew.com/Script/index.htm" target="_blank" rel="noopener">http://docs.manew.com/Script/index.htm</a></p><p>unity脚本执行顺序详解：<a href="https://blog.csdn.net/woailvmengmeng/article/details/28423039" target="_blank" rel="noopener">https://blog.csdn.net/woailvmengmeng/article/details/28423039</a></p>]]></content>
     
@@ -30,6 +30,8 @@
       &lt;p&gt;Github地址：&lt;a href=&quot;https://github.com/FantasticGold/Unity3D-Study&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/FantasticGold/Unity3D-Study&lt;/a&gt;&lt;/p&gt;
     
     </summary>
+    
+      <category term="项目" scheme="http://fantasticgold.github.io/categories/%E9%A1%B9%E7%9B%AE/"/>
     
     
       <category term="游戏" scheme="http://fantasticgold.github.io/tags/%E6%B8%B8%E6%88%8F/"/>
