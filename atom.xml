@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://fantasticgold.github.io/"/>
-  <updated>2019-03-15T09:01:00.114Z</updated>
+  <updated>2019-03-19T10:07:12.089Z</updated>
   <id>http://fantasticgold.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>系统分析与设计 - 作业2</title>
+    <link href="http://fantasticgold.github.io/2019/03/16/%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90%E4%B8%8E%E8%AE%BE%E8%AE%A1-%E4%BD%9C%E4%B8%9A2/"/>
+    <id>http://fantasticgold.github.io/2019/03/16/系统分析与设计-作业2/</id>
+    <published>2019-03-16T15:26:25.000Z</published>
+    <updated>2019-03-19T10:07:12.089Z</updated>
+    
+    <content type="html"><![CDATA[<p>软件项目与知识团队管理基础</p><a id="more"></a><h2 id="分析与设计"><a href="#分析与设计" class="headerlink" title="分析与设计"></a>分析与设计</h2><ul><li><strong>分析</strong>（do the right thing）：对问题和需求进行调查研究，而不是寻找解决方案。</li><li><strong>设计</strong>（do the thing right）：构思解决问题的概念方案，而不是具体实现。</li></ul><h2 id="面向对象的分析与设计"><a href="#面向对象的分析与设计" class="headerlink" title="面向对象的分析与设计"></a>面向对象的分析与设计</h2><p>面向对象的分析与设计的优势在于两者使用同一种建模符号以简化过程的复杂性。</p><h2 id="UML"><a href="#UML" class="headerlink" title="UML"></a>UML</h2><p><strong>作用：</strong></p><ul><li>说明、可视化、构建和编写一个正在开发的、面向对象的、软件密集系统的制品</li></ul><p><strong>分类：</strong></p><p><img src="/2019/03/16/系统分析与设计-作业2/UML图.jpg" width="50%" height="50%"></p><h2 id="软件范围控制"><a href="#软件范围控制" class="headerlink" title="软件范围控制"></a>软件范围控制</h2><p>由于软件本身的复杂性、一致性、可变性、不可视性，软件范围中只有20%是与客户严格约定的，其余80%都是相对模糊的，因此关键在于围绕客户的目标，发现并满足客户感兴趣的内容。只要细化这20%的有效需求，就可以满足80%的客户需要，由此可见，软件范围控制是可行的。</p><h2 id="KANBAN"><a href="#KANBAN" class="headerlink" title="KANBAN"></a>KANBAN</h2><p><img src="/2019/03/16/系统分析与设计-作业2/KANBAN.png"></p><h2 id="UML类图"><a href="#UML类图" class="headerlink" title="UML类图"></a>UML类图</h2><p>《UML和模式应用》（中文版）P184 图16-5</p><p><img src="/2019/03/16/系统分析与设计-作业2/UML类图.png"></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;软件项目与知识团队管理基础&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="作业" scheme="http://fantasticgold.github.io/categories/%E4%BD%9C%E4%B8%9A/"/>
+    
+    
+      <category term="系统分析与设计" scheme="http://fantasticgold.github.io/tags/%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90%E4%B8%8E%E8%AE%BE%E8%AE%A1/"/>
+    
+  </entry>
   
   <entry>
     <title>系统分析与设计 - 作业1</title>
