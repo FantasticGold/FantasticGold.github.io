@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://fantasticgold.github.io/"/>
-  <updated>2019-04-13T15:53:32.713Z</updated>
+  <updated>2019-04-13T18:11:41.232Z</updated>
   <id>http://fantasticgold.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://fantasticgold.github.io/2019/04/10/%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90%E4%B8%8E%E8%AE%BE%E8%AE%A1-%E4%BD%9C%E4%B8%9A4/"/>
     <id>http://fantasticgold.github.io/2019/04/10/系统分析与设计-作业4/</id>
     <published>2019-04-10T01:05:43.000Z</published>
-    <updated>2019-04-13T15:53:32.713Z</updated>
+    <updated>2019-04-13T18:11:41.232Z</updated>
     
-    <content type="html"><![CDATA[<p>用例建模 - 绘制用例图（更新中）</p><a id="more"></a><h2 id="简答"><a href="#简答" class="headerlink" title="简答"></a>简答</h2><h3 id="用例的概念"><a href="#用例的概念" class="headerlink" title="用例的概念"></a>用例的概念</h3><h3 id="用例与场景的关系？什么是主场景或-happy-path？"><a href="#用例与场景的关系？什么是主场景或-happy-path？" class="headerlink" title="用例与场景的关系？什么是主场景或 happy path？"></a>用例与场景的关系？什么是主场景或 happy path？</h3><h3 id="用例有哪些形式？"><a href="#用例有哪些形式？" class="headerlink" title="用例有哪些形式？"></a>用例有哪些形式？</h3><h3 id="对于复杂业务，为什么编制完整用例非常难？"><a href="#对于复杂业务，为什么编制完整用例非常难？" class="headerlink" title="对于复杂业务，为什么编制完整用例非常难？"></a>对于复杂业务，为什么编制完整用例非常难？</h3><h3 id="什么是用例图？"><a href="#什么是用例图？" class="headerlink" title="什么是用例图？"></a>什么是用例图？</h3><h3 id="用例图的基本符合与元素？"><a href="#用例图的基本符合与元素？" class="headerlink" title="用例图的基本符合与元素？"></a>用例图的基本符合与元素？</h3><h3 id="用例图的画法与步骤"><a href="#用例图的画法与步骤" class="headerlink" title="用例图的画法与步骤"></a>用例图的画法与步骤</h3><h3 id="用例图给利益相关人与开发者的价值有哪些？"><a href="#用例图给利益相关人与开发者的价值有哪些？" class="headerlink" title="用例图给利益相关人与开发者的价值有哪些？"></a>用例图给利益相关人与开发者的价值有哪些？</h3><h2 id="建模练习"><a href="#建模练习" class="headerlink" title="建模练习"></a>建模练习</h2>]]></content>
+    <content type="html"><![CDATA[<p>用例建模 - 绘制用例图（更新中）</p><a id="more"></a><h2 id="简答"><a href="#简答" class="headerlink" title="简答"></a><strong>简答</strong></h2><h3 id="用例的概念"><a href="#用例的概念" class="headerlink" title="用例的概念"></a>用例的概念</h3><p>用例是一组描述参与者使用系统完成目标的场景。</p><h3 id="用例与场景的关系？什么是主场景？"><a href="#用例与场景的关系？什么是主场景？" class="headerlink" title="用例与场景的关系？什么是主场景？"></a>用例与场景的关系？什么是主场景？</h3><p>一个用例提供一组场景，包括主场景和可选场景。</p><p>主场景就是直接实现用户目标的场景，通常涉及主要的系统交互。</p><h3 id="用例有哪些形式？"><a href="#用例有哪些形式？" class="headerlink" title="用例有哪些形式？"></a>用例有哪些形式？</h3><p>用例有三种形式：</p><ul><li><p><strong>摘要用例</strong></p><p>用几句话概括主场景，编写时间少，效率高。</p></li><li><p><strong>非正式用例</strong></p><p>由几个段落组成，适当添加场景细节，较为简洁。</p></li><li><p><strong>完整用例</strong></p><p>详细描述每个场景，考虑繁琐的细节，内容较多。</p></li></ul><h3 id="对于复杂业务，为什么编制完整用例非常难？"><a href="#对于复杂业务，为什么编制完整用例非常难？" class="headerlink" title="对于复杂业务，为什么编制完整用例非常难？"></a>对于复杂业务，为什么编制完整用例非常难？</h3><p>因为用例描述了如何完成业务目标，而复杂的业务往往需要多个用例来描述，所以编制完整用例需要考虑的细节非常多，这就导致编制完整用例非常难。</p><h3 id="什么是用例图？"><a href="#什么是用例图？" class="headerlink" title="什么是用例图？"></a>什么是用例图？</h3><p>用例图是由参与者、用例、边界以及它们之间的关系构成的用于描述系统功能的视图。</p><h3 id="用例图的基本符号与元素？"><a href="#用例图的基本符号与元素？" class="headerlink" title="用例图的基本符号与元素？"></a>用例图的基本符号与元素？</h3><p>用例图的基本符号与元素包括参与者、用例、系统边界和箭头。</p><ul><li><p><strong>参与者</strong></p><p>系统以外的在使用系统或与系统交互中扮演的角色。</p><p><img src="/2019/04/10/系统分析与设计-作业4/Actor.png" alt="Actor"></p></li><li><p><strong>用例</strong></p><p>对包括变量在内的一组动作序列的描述，系统执行这些动作，并产生传递特定参与者价值的可观察结果。</p><p><img src="/2019/04/10/系统分析与设计-作业4/UseCase.png" alt="UseCase"></p></li><li><p><strong>系统边界</strong></p><p>用来表示正在建模的系统的边界。</p><p><img src="/2019/04/10/系统分析与设计-作业4/SystemBoundary.png" alt="SystemBoundary"></p></li><li><p><strong>箭头</strong></p><p>用来表示参与者和系统通过相互发送信息或消息进行交互的关联关系。</p><p><img src="/2019/04/10/系统分析与设计-作业4/Arrow.png" alt="Arrow"></p></li></ul><h3 id="用例图的画法与步骤"><a href="#用例图的画法与步骤" class="headerlink" title="用例图的画法与步骤"></a>用例图的画法与步骤</h3><ol><li>确定系统边界</li><li>确定参与者</li><li>确定用例</li><li>确定参与者与用例之间的关系</li><li>确定用例与用例之间的关系</li></ol><h3 id="用例图给利益相关人与开发者的价值有哪些？"><a href="#用例图给利益相关人与开发者的价值有哪些？" class="headerlink" title="用例图给利益相关人与开发者的价值有哪些？"></a>用例图给利益相关人与开发者的价值有哪些？</h3><ul><li>明确系统的业务范围和服务</li><li>用于估计项目的规模和复杂性</li><li>提供了对总体需求的直观理解</li><li>用于评估和确定需求的优先级</li></ul><h2 id="建模"><a href="#建模" class="headerlink" title="建模"></a><strong>建模</strong></h2>]]></content>
     
     <summary type="html">
     
