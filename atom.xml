@@ -177,7 +177,7 @@
     <link href="http://fantasticgold.github.io/2019/01/21/%E5%B9%BB%E6%83%B3%E4%B9%8B%E6%BA%90/"/>
     <id>http://fantasticgold.github.io/2019/01/21/幻想之源/</id>
     <published>2019-01-21T03:05:56.000Z</published>
-    <updated>2019-01-21T16:41:08.546Z</updated>
+    <updated>2019-05-09T06:04:02.615Z</updated>
     
     <content type="html"><![CDATA[<p>2019年1月21日，我搭建了个人博客——幻想之源。</p><a id="more"></a><p>我在很久以前就想做这件事了，但一直没动手，一是因为懒，二是怕自己做不好。在此之前，我只用过Github和CSDN。Github适合挂项目，CSDN适合写随笔，对于我之前的状态来说，这两者已经足够了。而且我一直觉得，个人博客一定要从风格到内容都是独一无二的，就算做不到完美，也要让自己挑不出毛病，这显然要花费很多的时间和精力。</p><p>不过，我现在觉得，之前没有去做这件事，只是因为自己没有下定决心罢了。Github可以保存源码，但我几乎不去回顾；CSDN有满满的干货，但那并不是我想表达的全部。除了项目和技术，我需要一个地方来整理其它方面的思路。至于搭建独一无二的个人博客，这其实并不太难。网上有很多搭建博客的方法和技术，只要找一份模板就能保证达到最低要求，然后把细节调整一下就完成了。</p><p>我很早就给自己起了个名字，叫Gold。之后由于重名，又扩展为FantasticGold，即幻想G。那么，幻想之源，就是我的世界。</p>]]></content>
     
@@ -189,6 +189,8 @@
     
       <category term="随笔" scheme="http://fantasticgold.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
     
+    
+      <category term="Gold" scheme="http://fantasticgold.github.io/tags/Gold/"/>
     
   </entry>
   
