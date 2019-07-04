@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://fantasticgold.github.io/"/>
-  <updated>2019-07-04T09:29:34.199Z</updated>
+  <updated>2019-07-04T09:33:55.750Z</updated>
   <id>http://fantasticgold.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://fantasticgold.github.io/2019/07/04/%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90%E4%B8%8E%E8%AE%BE%E8%AE%A1-%E4%BD%9C%E4%B8%9A7/"/>
     <id>http://fantasticgold.github.io/2019/07/04/系统分析与设计-作业7/</id>
     <published>2019-07-04T02:08:11.000Z</published>
-    <updated>2019-07-04T09:29:34.199Z</updated>
+    <updated>2019-07-04T09:33:55.750Z</updated>
     
-    <content type="html"><![CDATA[<p>详细设计 - 使用交互图和设计类图实现用例</p><a id="more"></a><h2 id="Make-Reservation用例详细设计"><a href="#Make-Reservation用例详细设计" class="headerlink" title="Make Reservation用例详细设计"></a>Make Reservation用例详细设计</h2><h3 id="用例简介"><a href="#用例简介" class="headerlink" title="用例简介"></a>用例简介</h3><p>用户首先进入旅馆搜索界面，输入时间和地点来搜索旅馆；然后进入旅馆选择页面，选择预订的旅馆；再进入房型选择页面，选择预订的房型；接着进入订单确认界面，确认订单；最后进入支付页面，支付订单。</p><h3 id="顺序图"><a href="#顺序图" class="headerlink" title="顺序图"></a>顺序图</h3><p>ECB类包括</p><ul><li><strong>Boundary</strong><ul><li>SearchHotelPage</li><li>ChooseHotelPage</li><li>ChooseRoomPage</li><li>ConfirmReservationPage</li><li>PayPage</li></ul></li><li><strong>Controller</strong><ul><li>ReservationController</li></ul></li><li><strong>Entity</strong><ul><li>Hotel</li><li>Room</li><li>Reservation</li></ul></li></ul><p><img src="/2019/07/04/系统分析与设计-作业7/Sequence_MakeReservation.png" alt=""></p><h3 id="类图"><a href="#类图" class="headerlink" title="类图"></a>类图</h3><p><img src="/2019/07/04/系统分析与设计-作业7/Class_MakeReservation.png" alt=""></p><h3 id="包图"><a href="#包图" class="headerlink" title="包图"></a>包图</h3><p><img src="/2019/07/04/系统分析与设计-作业7/Package_MakeReservation.png" alt=""></p>]]></content>
+    <content type="html"><![CDATA[<p>详细设计 - 使用交互图和设计类图实现用例</p><a id="more"></a><h2 id="Make-Reservation用例详细设计"><a href="#Make-Reservation用例详细设计" class="headerlink" title="Make Reservation用例详细设计"></a>Make Reservation用例详细设计</h2><h3 id="用例简介"><a href="#用例简介" class="headerlink" title="用例简介"></a>用例简介</h3><p>用户首先进入旅馆搜索界面，输入时间和地点来搜索旅馆；然后进入旅馆选择页面，选择预订的旅馆；再进入房型选择页面，选择预订的房型；接着进入订单确认界面，确认订单；最后进入支付页面，支付订单。</p><p>其中ECB类包括</p><ul><li><strong>Boundary</strong><ul><li>SearchHotelPage</li><li>ChooseHotelPage</li><li>ChooseRoomPage</li><li>ConfirmReservationPage</li><li>PayPage</li></ul></li><li><strong>Controller</strong><ul><li>ReservationController</li></ul></li><li><strong>Entity</strong><ul><li>Hotel</li><li>Room</li><li>Reservation</li></ul></li></ul><h3 id="顺序图"><a href="#顺序图" class="headerlink" title="顺序图"></a>顺序图</h3><p><img src="/2019/07/04/系统分析与设计-作业7/Sequence_MakeReservation.png" alt=""></p><h3 id="类图"><a href="#类图" class="headerlink" title="类图"></a>类图</h3><p><img src="/2019/07/04/系统分析与设计-作业7/Class_MakeReservation.png" alt=""></p><h3 id="包图"><a href="#包图" class="headerlink" title="包图"></a>包图</h3><p><img src="/2019/07/04/系统分析与设计-作业7/Package_MakeReservation.png" alt=""></p>]]></content>
     
     <summary type="html">
     
