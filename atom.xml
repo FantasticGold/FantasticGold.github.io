@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://fantasticgold.github.io/"/>
-  <updated>2019-06-30T18:27:08.602Z</updated>
+  <updated>2019-07-04T02:10:20.564Z</updated>
   <id>http://fantasticgold.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>系统分析与设计 - 作业7</title>
+    <link href="http://fantasticgold.github.io/2019/07/04/%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90%E4%B8%8E%E8%AE%BE%E8%AE%A1-%E4%BD%9C%E4%B8%9A7/"/>
+    <id>http://fantasticgold.github.io/2019/07/04/系统分析与设计-作业7/</id>
+    <published>2019-07-04T02:08:11.000Z</published>
+    <updated>2019-07-04T02:10:20.564Z</updated>
+    
+    <content type="html"><![CDATA[<p>详细设计 - 使用交互图和设计类图实现用例</p><a id="more"></a>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;详细设计 - 使用交互图和设计类图实现用例&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="作业" scheme="http://fantasticgold.github.io/categories/%E4%BD%9C%E4%B8%9A/"/>
+    
+    
+      <category term="系统分析与设计" scheme="http://fantasticgold.github.io/tags/%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90%E4%B8%8E%E8%AE%BE%E8%AE%A1/"/>
+    
+  </entry>
   
   <entry>
     <title>微信小程序开发入门</title>
@@ -43,7 +65,7 @@
     <link href="http://fantasticgold.github.io/2019/05/05/%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90%E4%B8%8E%E8%AE%BE%E8%AE%A1-%E4%BD%9C%E4%B8%9A6/"/>
     <id>http://fantasticgold.github.io/2019/05/05/系统分析与设计-作业6/</id>
     <published>2019-05-05T04:08:28.000Z</published>
-    <updated>2019-05-08T01:13:50.983Z</updated>
+    <updated>2019-07-04T02:09:22.384Z</updated>
     
     <content type="html"><![CDATA[<p>领域建模 - 对象状态</p><a id="more"></a><h2 id="建模"><a href="#建模" class="headerlink" title="建模"></a>建模</h2><h3 id="Make-Reservation用例领域建模"><a href="#Make-Reservation用例领域建模" class="headerlink" title="Make Reservation用例领域建模"></a>Make Reservation用例领域建模</h3><p><img src="/2019/05/05/系统分析与设计-作业6/Domain_MakeReservation.png" alt=""></p><h3 id="Make-Reservation用例数据建模"><a href="#Make-Reservation用例数据建模" class="headerlink" title="Make Reservation用例数据建模"></a>Make Reservation用例数据建模</h3><ul><li>Hotel（ID/Key，Name，LocationID/Fkey，Address）</li><li>Location（ID/Key，Name）</li><li>Room（ID/Key，HotelID/Fkey，type，price，number）</li><li>Customer（ID/Key，Name，Email）</li><li>Reservation（ID/Key，CustomerID/Fkey，RoomID/Fkey，CheckInDate， CheckOutDate，RoomNumber，AdultNumber，ChildNumber）</li></ul><h3 id="Payment用例领域建模"><a href="#Payment用例领域建模" class="headerlink" title="Payment用例领域建模"></a>Payment用例领域建模</h3><p><img src="/2019/05/05/系统分析与设计-作业6/Domain_Payment.png" alt=""></p><h3 id="Payment用例数据建模"><a href="#Payment用例数据建模" class="headerlink" title="Payment用例数据建模"></a>Payment用例数据建模</h3><ul><li>Payment（ID/Key，PaymentItemID/Fkey，CustomerID/Fkey，CreditCardID/Fkey）</li><li>PaymentItem（ID/Key，RoomType，RoomNumber）</li><li>Customer（ID/Key，Name，Email）</li><li>CreditCard（ID/Key，CustomerID/Fkey，CardNumber，CardSecurityCode，FirstName，LastName，Address，Country，Telephone）</li></ul><h3 id="Reservation-Order对象建模"><a href="#Reservation-Order对象建模" class="headerlink" title="Reservation/Order对象建模"></a>Reservation/Order对象建模</h3><p><img src="/2019/05/05/系统分析与设计-作业6/State_ReserveHotel.png" alt=""></p>]]></content>
     
